@@ -68,3 +68,14 @@ for (let i = 0; i < data.length; i++) {
 for (let d in data) {
   console.log(data[d].fact);
 }
+
+//
+//
+
+function timeout() {
+  console.log("Noe Kommer til  skje!");
+
+  setTimeout(function() {
+    console.log("Nå har det skjedd!");
+  }, 10000)
+};
