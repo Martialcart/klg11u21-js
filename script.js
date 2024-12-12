@@ -51,14 +51,16 @@ const data = [
 // 1. Lag en 'for loop' som gir ut alle fact resultatene
 
 
-//oppg1 2
+//oppg1
+
+//opg2
 console.log(data[5].fact);
 
 //bonus 1
 data.forEach((i) => {
-  console.log(i.fact.valueOf());
+  console.log(i.fact);
 });
 
-for(data in d ) {
-  console.log(d);
+for (let i = 0; i < data.length; i++) {
+  console.log(data[i].fact);
 }
