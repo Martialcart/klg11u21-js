@@ -57,14 +57,18 @@ const data = [
 console.log(data[5].fact);
 
 //bonus 1
+
+let paragraf
 data.forEach((i) => {
-  console.log(i.fact);
+  document.createElement("p").addEventListener()
+  document.querySelector('main').appendChild(
+  )
 });
 
 for (let i = 0; i < data.length; i++) {
   console.log(data[i].fact);
 }
-
+data.sort()
 for (let d in data) {
   console.log(data[d].fact);
 }
