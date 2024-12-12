@@ -86,12 +86,40 @@ console.log("kommentar etter timeout funskjon");
 //json kan kun ha en array inni seg
 
 //saynch to import json file
-async function fetchFile() {
+async function fetchFile() {//await wont work without asynch
   const dataFile = await fetch("data.json");
   console.log(dataFile);
 
   const response = await dataFile.json();
   console.log(response);
+
+  for ( let i = 0; i < response.length; i++) {
+    console.log(response[i].fact);
+  }
+
+  response.forEach((i) => {
+    console.log(i + " response for each");
+  })
 }
 
 fetchFile();
+
+
+//
+//
+
+
+//
+
+function klokke() {
+  let d;
+  setInterval(function() {
+    d = new Date();
+    console.log(d.getHours() + ':' + 
+                d.getMinutes() + '.' +
+                d.getSeconds()
+    );
+  }, 1000);
+}
+
+klokke();
