@@ -86,7 +86,7 @@ console.log("kommentar etter timeout funskjon");
 //json kan kun ha en array inni seg
 
 //saynch to import json file
-async function fetchFile() {
+function fetchFile() {
   const dataFile = await fetch("data.json");
   console.log(dataFile);
 
