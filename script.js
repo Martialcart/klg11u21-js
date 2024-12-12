@@ -77,5 +77,7 @@ function timeout() {
 
   setTimeout(function() {
     console.log("Nå har det skjedd!");
-  }, 10000)
+  }, 3000);
 };
+
+timeout();
