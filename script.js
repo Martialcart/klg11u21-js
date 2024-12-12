@@ -49,3 +49,16 @@ const data = [
 
 // Bonus oppgave:
 // 1. Lag en 'for loop' som gir ut alle fact resultatene
+
+
+//oppg1 2
+console.log(data[5].fact);
+
+//bonus 1
+data.forEach((i) => {
+  console.log(i.fact.valueOf());
+});
+
+for(data in d ) {
+  console.log(d);
+}
