@@ -108,7 +108,6 @@ fetchFile();
 //
 //
 
-
 //
 
 function klokke() {
@@ -122,4 +121,15 @@ function klokke() {
   }, 1000);
 }
 
-klokke();
+//klokke();
+
+//json fra ekstern skilde
+async function getRemoteFile() {
+  const remoteFile = await fetch("https://catfact.ninja/facts");
+  console.log(remoteFile);
+  const remoteResponse = await remoteFile.json();
+  console.log(remoteResponse.data);
+}
+
+
+getRemoteFile();
