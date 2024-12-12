@@ -64,3 +64,7 @@ data.forEach((i) => {
 for (let i = 0; i < data.length; i++) {
   console.log(data[i].fact);
 }
+
+for (let d in data) {
+  console.log(data[d].fact);
+}
